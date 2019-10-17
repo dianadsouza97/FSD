@@ -1,0 +1,59 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>AddEntry</servlet-name>
+  	<display-name>AddEntry</display-name>
+  	<description></description>
+  	<servlet-class>com.mycompany.controller.AddEntry</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ListOfCustomer</servlet-name>
+  	<display-name>ListOfCustomer</display-name>
+  	<description></description>
+  	<servlet-class>com.mycompany.view.ListOfCustomer</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ErrorPage</servlet-name>
+  	<display-name>ErrorPage</display-name>
+  	<description></description>
+  	<servlet-class>com.mycompany.view.ErrorPage</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SuccessPage</servlet-name>
+  	<display-name>SuccessPage</display-name>
+  	<description></description>
+  	<servlet-class>com.mycompany.view.SuccessPage</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EntryForm</servlet-name>
+  	<display-name>EntryForm</display-name>
+  	<description></description>
+  	<servlet-class>com.mycompany.view.EntryForm</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+  	<servlet-name>AddEntry</servlet-name>
+  	<url-pattern>/add_entry.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListOfCustomer</servlet-name>
+  	<url-pattern>/list_of_customer.hr</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ErrorPage</servlet-name>
+  	<url-pattern>/error_page</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SuccessPage</servlet-name>
+  	<url-pattern>/success.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>EntryForm</servlet-name>
+  	<url-pattern>/EntryForm</url-pattern>
+  </servlet-mapping>
+</web-app>
